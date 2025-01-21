@@ -8,7 +8,10 @@ function handlePageRouting() {
     // Extract the page from the URL (e.g., /about or /contact)
     const path = window.location.pathname.replace(/^\/|\/$/g, "");
     // Check if the requested page exists in the list of valid pages
-    if (!validPages.includes(path)) {
+    if(path === "") {
+        path = "index";
+    }
+    else if (!validPages.includes(path)) {
         // Redirect to 404 page if the page does not exist
         window.location.href = "/404.html";
     }
