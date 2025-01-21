@@ -13,25 +13,25 @@
     <link rel="stylesheet" href="styles/style_x_1024.css">
     <link rel="stylesheet" href="styles/style_x_768.css">
     <link rel="stylesheet" href="styles/style_x_640.css">
-    <script defer src="js/javascript.js"></script>
+    <script defer type="module" src="js/javascript.js"></script>
 </head>
 
 <body>
 
+    <!-- Navigation bar start -->
     <header>
         <nav class="nav">
-            <div class="header">
-                PixelPlay
-            </div>
+            <div class="header">PixelPlay</div>
             <div class="search-input">
-                <svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+                <svg class="search-icon" fill="none" height="24" viewBox="0 0 24 24" width="24">
                     <path
                         d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
                         stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
                     <path d="M22 22L20 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                         stroke-width="1.5" />
                 </svg>
-                <input type="search" class="search-input" placeholder="Search" id="searchBar">
+                <input type="search" id="searchBar" placeholder="Search">
+                <div id="search-results" class="search-list"></div>
             </div>
             <div class="nav-list">
                 <li><a class="same-nav" href="/">Home</a></li>
@@ -44,6 +44,7 @@
             <button id="hammenu" type="button"><img class="imgmenu" src="images/icons8-hamburger-menu-144.png"></button>
         </nav>
     </header>
+    <!-- Navigation bar end -->
 
 
 

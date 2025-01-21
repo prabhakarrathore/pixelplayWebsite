@@ -1,7 +1,7 @@
 const ApiKey = "44062922-cd468afa0b651c957755954fe";
 
 // Basic 404 Redirect for Non-Existent Routes
-const validRoutes = ["index.html", "about.html", "contact.html", ""]; // Add valid routes here
+const validRoutes = ["index.html", "about.html", "contact.html"]; // Add valid routes here
 const currentPage = window.location.pathname.split("/").pop();
 
 if (!validRoutes.includes(currentPage)) {
