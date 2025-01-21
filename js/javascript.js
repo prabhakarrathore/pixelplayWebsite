@@ -1,20 +1,22 @@
 const ApiKey = "44062922-cd468afa0b651c957755954fe";
 
-// Basic 404 Redirect for Non-Existent Routes
-const validRoutes = ["index", "about", "contact"]; // Add valid routes here
+// Define a list of available pages
+const validPages = ["index.", "about", "contact"];
 
-// Get the current page, trimming any whitespace and handling edge cases
-let currentPage = window.location.pathname.split("/").pop().trim();
+// Function to check the page and redirect if necessary
+function handlePageRouting() {
+    // Extract the page from the URL (e.g., /about or /contact)
+    const path = window.location.pathname.replace("/", "");
 
-// If the path is empty or whitespace, default to "index.html"
-if (currentPage === "") {
-    currentPage = "index.html";
+    // Check if the requested page exists in the list of valid pages
+    if (!validPages.includes(path)) {
+        // Redirect to 404 page if the page does not exist
+        window.location.href = "/404.html";
+    }
 }
 
-// Redirect to 404 page if the route is not valid
-if (!validRoutes.includes(currentPage)) {
-    window.location.href = "/404.html";
-}
+// Call the function when the script loads
+handlePageRouting();
 
 
 async function getPhotos() {
