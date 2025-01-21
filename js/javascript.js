@@ -6,7 +6,7 @@ const validPages = ["index", "about", "contact"];
 // Function to check the page and redirect if necessary
 function handlePageRouting() {
     // Extract the page from the URL (e.g., /about or /contact)
-    const path = window.location.pathname.replace("/", "");
+    const path = window.location.pathname.replace(/^\/|\/$/g, "");
 
     // Check if the requested page exists in the list of valid pages
     if (!validPages.includes(path)) {
