@@ -1,7 +1,7 @@
 const ApiKey = "44062922-cd468afa0b651c957755954fe";
 
 // Define a list of available pages
-const validPages = ["index.", "about", "contact"];
+const validPages = ["index", "about", "contact"];
 
 // Function to check the page and redirect if necessary
 function handlePageRouting() {
