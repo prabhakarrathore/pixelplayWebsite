@@ -5,7 +5,7 @@ const validRoutes = ["index.html", "about.html", "contact.html", ""]; // Add val
 const currentPage = window.location.pathname.split("/").pop();
 
 if (!validRoutes.includes(currentPage)) {
-    window.location.href = "404.html";
+    window.location.href = "/404.html";
 }
 
 async function getPhotos() {
