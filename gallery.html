@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPlay - Gallery</title>
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_x_1536.css">
+    <link rel="stylesheet" href="styles/style_x_1280.css">
+    <link rel="stylesheet" href="styles/style_x_1024.css">
+    <link rel="stylesheet" href="styles/style_x_768.css">
+    <link rel="stylesheet" href="styles/style_x_640.css">
+    
+    <script defer type="module" src="js/Galleryscript.js"></script>
+</head>
+
+<body>
+
+       <!-- Navigation bar start -->
+       <header>
+        <nav class="nav">
+            <div class="header">PixelPlay</div>
+            <div class="search-input">
+                <svg class="search-icon" fill="none" height="24" viewBox="0 0 24 24" width="24">
+                    <path
+                        d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                    <path d="M22 22L20 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5" />
+                </svg>
+                <input type="search" id="searchBar" placeholder="Search">
+                <div id="search-results" class="search-list"></div>
+            </div>
+            <div class="nav-list">
+                <li><a class="same-nav" href="/">Home</a></li>
+                <li><a class="same-nav" href="/about.html">About</a></li>
+                <li><a class="same-nav" href="/contact.html">Contact Us</a></li>
+                <button id="closemenu" type="button">
+                    <img class="imgmenu" src="images/icons8-cross-100.png">
+                </button>
+            </div>
+            <button id="hammenu" type="button"><img class="imgmenu" src="images/icons8-hamburger-menu-144.png"></button>
+        </nav>
+    </header>
+    <!-- Navigation bar end -->
+
+    <div>
+        <h1 class="image-heading">Explore Latest Images</h1>
+        <section id="container-gallery">
+            <div id="minibox"></div>
+        </section>
+    </div>
+    <div class="pagination-container">
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+
+    <!-- Footer section start -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="bottom-logo">PixelPlay</div>
+            <div class="footer-content">
+                <ul class="footer-list">
+                    <b>Quick Links</b>
+                    <li class="footer-nav"><a class="same-nav" href="/">Home</a></li>
+                    <li class="footer-nav"><a class="same-nav" href="/about.html">About</a></li>
+                    <li class="footer-nav"><a class="same-nav" href="/contact.html">Contact Us</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <b>Follow Us</b>
+                    <li class="footer-nav"><a class="same-nav"
+                            href="https://www.instagram.com/prabhakar_rathore/">Instagram</a></li>
+                    <li class="footer-nav"><a class="same-nav"
+                            href="https://www.linkedin.com/in/prabhakar-rathore-3194192a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a id="back" href="#top">↑</a>
+    </footer>
+    <!-- Footer section end -->
+</body>
+
+</html>

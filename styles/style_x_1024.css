@@ -1,0 +1,6 @@
+@media (max-width: 1024px) {
+    #minibox {
+        columns: 2;  
+        flex-wrap: wrap;
+    }
+}
