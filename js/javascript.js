@@ -2,11 +2,20 @@ const ApiKey = "44062922-cd468afa0b651c957755954fe";
 
 // Basic 404 Redirect for Non-Existent Routes
 const validRoutes = ["index.html", "about.html", "contact.html"]; // Add valid routes here
-const currentPage = window.location.pathname.split("/").pop();
 
+// Get the current page, trimming any whitespace and handling edge cases
+let currentPage = window.location.pathname.split("/").pop().trim();
+
+// If the path is empty or whitespace, default to "index.html"
+if (currentPage === "") {
+    currentPage = "index.html";
+}
+
+// Redirect to 404 page if the route is not valid
 if (!validRoutes.includes(currentPage)) {
     window.location.href = "/404.html";
 }
+
 
 async function getPhotos() {
     const listContainers = document.getElementById("minibox");
